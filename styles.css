@@ -113,3 +113,38 @@ label:hover {
     width: 100%;
   }
 }
+
+/* Desain elegan untuk input nama */
+.input-container {
+  margin-bottom: 20px;
+}
+
+.input-container label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #4a89a1; /* Warna calm untuk label */
+  margin-bottom: 10px;
+  display: block;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #dbe2ea; /* Border lembut */
+  border-radius: 8px; /* Sudut melengkung */
+  outline: none;
+  background: #f7fafc; /* Latar belakang soft */
+  transition: border 0.3s, box-shadow 0.3s; /* Animasi saat fokus */
+}
+
+.input-container input:focus {
+  border-color: #4a89a1; /* Warna border saat fokus */
+  box-shadow: 0 0 8px rgba(74, 137, 161, 0.5); /* Efek glow */
+}
+
+/* Tambahkan margin pada label dan input */
+.input-container input::placeholder {
+  color: #b0b8c1; /* Warna placeholder yang elegan */
+  font-style: italic; /* Italic untuk placeholder */
+}

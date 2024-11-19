@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuis Ujian Akhir Semester</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Kuis Ujian Akhir Semester</h1>
+    <form id="quizForm">
+      <div class="question">
+        <p>1. Di antara unsur berikut ini, manakah yang termasuk unsur logam?</p>
+        <label><input type="radio" name="q1" value="Oksigen (O)"> Oksigen (O)</label><br>
+        <label><input type="radio" name="q1" value="Natrium (Na)"> Natrium (Na)</label><br>
+        <label><input type="radio" name="q1" value="Klorin (Cl)"> Klorin (Cl)</label><br>
+        <label><input type="radio" name="q1" value="Belerang (S)"> Belerang (S)</label>
+      </div>
+      <div class="question">
+        <p>2. Tokoh yang pertama kali mengelompokkan unsur berdasarkan kenaikan massa atom relatif adalah ...</p>
+        <label><input type="radio" name="q2" value="Dmitri Mendeleev"> Dmitri Mendeleev</label><br>
+        <label><input type="radio" name="q2" value="John Newlands"> John Newlands</label><br>
+        <label><input type="radio" name="q2" value="Henry Moseley"> Henry Moseley</label><br>
+        <label><input type="radio" name="q2" value="Antoine Lavoisier"> Antoine Lavoisier</label>
+      </div>
+      <div class="question">
+        <p>3. Urutkan unsur berikut berdasarkan ukuran jari-jari atom dari yang terbesar ke terkecil: Na (11), Mg (12), K (19), dan Cl (17).</p>
+        <label><input type="radio" name="q3" value="Na > K > Cl > Mg"> Na > K > Cl > Mg</label><br>
+        <label><input type="radio" name="q3" value="K > Na > Mg > Cl"> K > Na > Mg > Cl</label><br>
+        <label><input type="radio" name="q3" value="Cl > Mg > Na > K"> Cl > Mg > Na > K</label><br>
+        <label><input type="radio" name="q3" value="Mg > K > Na > Cl"> Mg > K > Na > Cl</label>
+      </div>
+      <button type="button" id="submitBtn">Kirim Jawaban</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

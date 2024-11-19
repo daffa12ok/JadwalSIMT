@@ -70,7 +70,7 @@ function sendQuizResults(name, score, totalQuestions) {
 }
 
 // Timer untuk menghitung mundur waktu
-let timeLeft = 300; // Timer dalam detik (5 menit)
+let timeLeft = 60; // Timer dalam detik (5 menit)
 const timerElement = document.getElementById("timer");
 
 // Fungsi untuk menghitung mundur waktu

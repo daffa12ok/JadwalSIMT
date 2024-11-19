@@ -1,54 +1,113 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+/* Reset margin and padding */
+* {
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f4f8; /* Warna latar belakang calm */
+  line-height: 1.6;
   height: 100vh;
+  overflow-y: auto; /* Aktifkan scroll vertikal */
+  padding: 20px 0; /* Tambahkan padding agar soal tidak terlalu menempel */
 }
 
-.quiz-container {
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 400px;
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #4a89a1, #6a9ebd);
+  color: white;
+  display: flex;
+  justify-content: space-between; /* Tambahkan spasi di antara elemen */
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #f2f4f8; /* Border bawah untuk pemisah */
 }
 
-h1 {
-  text-align: center;
+.navbar h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
 }
+
 
 #timer {
-  font-size: 18px;
   font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
-  color: #e63946;
+  font-size: 16px;
+}
+
+#submitBtn {
+  background: #ff6f61; /* Warna merah pastel */
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#submitBtn:hover {
+  background: #ff5c4d;
+}
+
+/* Main Container */
+.quiz-container {
+  margin: 80px auto; /* Margin otomatis untuk memusatkan secara horizontal */
+  padding: 20px 30px;
+  width: 90%; /* Lebar relatif untuk tampilan responsif */
+  max-width: 700px; /* Lebar maksimal */
+  background: #ffffff; /* Warna latar belakang putih */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
 }
 
 .question {
   margin-bottom: 20px;
+  padding: 20px;
+  background: linear-gradient(90deg, #f7fafc, #e9eff4); /* Gradasi lembut */
+  border-radius: 8px;
+  border: 2px solid #dbe2ea; /* Perbesar border */
+  text-align: left;
 }
 
-button {
-  background-color: #007bff;
-  color: #ffffff;
-  padding: 10px 20px;
-  border: none;
+.question h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+  text-transform: capitalize; /* Huruf kapital setiap kata */
+}
+
+label:hover {
+  background: #eef5fb; /* Tambahkan efek hover di label */
   border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
 }
-
-button:hover {
-  background-color: #0056b3;
-}
-
+/* Result Section */
 #result {
-  margin-top: 20px;
-  font-weight: bold;
+  margin: 20px auto;
   text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #4a89a1; /* Warna calm untuk hasil */
+}
+
+/* Progress Animation */
+.progress-bar {
+  animation: grow 0.6s ease-in-out;
+}
+
+@keyframes grow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }

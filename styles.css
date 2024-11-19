@@ -67,6 +67,7 @@ body {
   background: #ffffff; /* Warna latar belakang putih */
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+  user-select: none; /* Mencegah teks dipilih */
 }
 
 .question {
@@ -76,6 +77,7 @@ body {
   border-radius: 8px;
   border: 2px solid #dbe2ea; /* Perbesar border */
   text-align: left;
+  user-select: none; /* Mencegah teks dipilih */
 }
 
 .question h2 {

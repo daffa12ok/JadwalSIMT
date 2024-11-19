@@ -2,7 +2,14 @@ document.getElementById("submitBtn").addEventListener("click", function() {
   const answers = {
     q1: "Natrium (Na)",
     q2: "Dmitri Mendeleev",
-    q3: "K > Na > Mg > Cl"
+    q3: "K > Na > Mg > Cl",
+    q4: "Nomor atom",
+    q5: "Fluorin (F)",
+    q6: "Alkali dan Gas Mulia",
+    q7: "Memiliki jumlah elektron valensi yang sama",
+    q8: "Menurun dari atas ke bawah dalam satu golongan karena peningkatan jarak antara elektron valensi dan inti atom.",
+    q9: "Menurun",
+    q10: "F > Cl > Br > I"
   };
 
   let score = 0;

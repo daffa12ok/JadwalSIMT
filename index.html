@@ -5,97 +5,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kuis Ujian Akhir Semester</title>
   <link rel="stylesheet" href="styles.css">
-  <div class="navbar">
-    <h1>Kuis Ujian Akhir Semester</h1>
-    <div id="timer">00:60</div>
-  </div>
 </head>
 <body>
   <div class="quiz-container">
     <h1>Kuis Ujian Akhir Semester</h1>
-    <div class="input-container">
-      <label for="name">Masukkan Nama Anda:</label>
-      <input type="text" id="name" placeholder="Nama lengkap Anda" required />
+    <form id="quizForm">
+      <div class="question">
+        <p>1. Ciri utama anekdot adalah…</p>
+        <label><input type="radio" name="q1" value="Menghibur dan mengandung kritik sosial"> Menghibur dan mengandung kritik sosial</label><br> 
+        <label><input type="radio" name="q1" value="Mengisahkan peristiwa sejarah"> Mengisahkan peristiwa sejarah</label><br> 
+        <label><input type="radio" name="q1" value="Berisi dialog panjang tanpa narasi"> Berisi dialog panjang tanpa narasi</label><br> 
+        <label><input type="radio" name="q1" value="Menceritakan kisah tragis dari tokoh besar"> Menceritakan kisah tragis dari tokoh besar</label><br> 
     </div>
-      <div class="question">
-        <p>1. Di antara unsur berikut ini, manakah yang termasuk unsur logam?</p>
-        <label><input type="radio" name="q1" value="Oksigen (O)"> Oksigen (O)</label><br>
-        <label><input type="radio" name="q1" value="Natrium (Na)"> Natrium (Na)</label><br>
-        <label><input type="radio" name="q1" value="Klorin (Cl)"> Klorin (Cl)</label><br>
-        <label><input type="radio" name="q1" value="Belerang (S)"> Belerang (S)</label>
-      </div>
-      <div class="question">
-        <p>2. Tokoh yang pertama kali mengelompokkan unsur berdasarkan kenaikan massa atom relatif adalah ...</p>
-        <label><input type="radio" name="q2" value="Dmitri Mendeleev"> Dmitri Mendeleev</label><br>
-        <label><input type="radio" name="q2" value="John Newlands"> John Newlands</label><br>
-        <label><input type="radio" name="q2" value="Henry Moseley"> Henry Moseley</label><br>
-        <label><input type="radio" name="q2" value="Antoine Lavoisier"> Antoine Lavoisier</label>
-      </div>
-      <div class="question">
-        <p>3. Urutkan unsur berikut berdasarkan ukuran jari-jari atom dari yang terbesar ke terkecil: Na (11), Mg (12), K (19), dan Cl (17).</p>
-        <label><input type="radio" name="q3" value="Na > K > Cl > Mg"> Na > K > Cl > Mg</label><br>
-        <label><input type="radio" name="q3" value="K > Na > Mg > Cl"> K > Na > Mg > Cl</label><br>
-        <label><input type="radio" name="q3" value="Cl > Mg > Na > K"> Cl > Mg > Na > K</label><br>
-        <label><input type="radio" name="q3" value="Mg > K > Na > Cl"> Mg > K > Na > Cl</label>
-      </div>
-      <div class="question">
-        <p>4. Teori perkembangan sistem periodik unsur menyatakan bahwa sifat-sifat unsur berulang secara periodik berdasarkan:</p>
-        <label><input type="radio" name="q4" value="Massa atom relatif"> Massa atom relatif</label><br>
-        <label><input type="radio" name="q4" value="Nomor atom"> Nomor atom</label><br>
-        <label><input type="radio" name="q4" value="Jumlah neutron"> Jumlah neutron</label><br>
-        <label><input type="radio" name="q4" value="Konfigurasi elektron"> Konfigurasi elektron</label>
-      </div>
-      <div class="question">
-        <p>5. Unsur dengan keelektronegatifan paling tinggi dalam tabel periodik adalah:</p>
-        <label><input type="radio" name="q5" value="Fluorin (F)"> Fluorin (F)</label><br>
-        <label><input type="radio" name="q5" value="Oksigen (O)"> Oksigen (O)</label><br>
-        <label><input type="radio" name="q5" value="Klorin (Cl)"> Klorin (Cl)</label><br>
-        <label><input type="radio" name="q5" value="Nitrogen (N)"> Nitrogen (N)</label>
-      </div>
-      <div class="question">
-        <p>6. Disajikan data berikut:
-          - Unsur A memiliki energi ionisasi rendah dan reaktif terhadap air.
-          - Unsur B bersifat gas dan tidak reaktif.
-
-          Unsur A dan B kemungkinan besar terletak pada golongan:
-        </p>
-        <label><input type="radio" name="q6" value="Alkali dan Halogen"> Alkali dan Halogen</label><br>
-        <label><input type="radio" name="q6" value="Alkali dan Gas Mulia"> Alkali dan Gas Mulia</label><br>
-        <label><input type="radio" name="q6" value="KAlkali Tanah dan Halogen"> Alkali Tanah dan Halogen</label><br>
-        <label><input type="radio" name="q6" value="Halogen dan Gas Mulia"> Halogen dan Gas Mulia</label>
-      </div>
-      <div class="question">
-        <p>7. Unsur dengan konfigurasi elektron 2, 8, 1 dan 2, 1 memiliki sifat kimia yang mirip karena        </p>
-        <label><input type="radio" name="q7" value="Memiliki jumlah elektron yang sama"> Memiliki jumlah elektron yang sama</label><br>
-        <label><input type="radio" name="q7" value="Memiliki jumlah proton yang sama"> Memiliki jumlah proton yang sama</label><br>
-        <label><input type="radio" name="q7" value="Memiliki jumlah elektron valensi yang sama"> Memiliki jumlah elektron valensi yang sama</label><br>
-        <label><input type="radio" name="q7" value="Memiliki nomor atom yang sama"> Memiliki nomor atom yang sama</label>
-      </div>
-      <div class="question">
-        <p>8. Energi ionisasi unsur dalam tabel periodik cenderung        </p>
-        <label><input type="radio" name="q8" value="Menurun dari atas ke bawah dalam satu golongan karena peningkatan jarak antara elektron valensi dan inti atom."> Menurun dari atas ke bawah dalam satu golongan karena peningkatan jarak antara elektron valensi dan inti atom.</label><br>
-        <label><input type="radio" name="q8" value="Meningkat dari atas ke bawah dalam satu golongan karena jumlah proton meningkat."> Meningkat dari atas ke bawah dalam satu golongan karena jumlah proton meningkat.</label><br>
-        <label><input type="radio" name="q8" value="Tetap konstan dalam satu periode karena jumlah elektron valensi tidak berubah."> Tetap konstan dalam satu periode karena jumlah elektron valensi tidak berubah.</label><br>
-        <label><input type="radio" name="q8" value="Menurun dari kiri ke kanan dalam satu periode karena peningkatan gaya tarik inti terhadap elektron valensi."> Menurun dari kiri ke kanan dalam satu periode karena peningkatan gaya tarik inti terhadap elektron valensi.</label>
-      </div>
-      <div class="question">
-        <p>9. Apa yang terjadi pada keelektronegatifan unsur saat bergerak dari kiri ke kanan dalam satu periode?        </p>
-        <label><input type="radio" name="q9" value="Menurun"> Menurun</label><br>
-        <label><input type="radio" name="q9" value="Meningkat"> Meningkat</label><br>
-        <label><input type="radio" name="q9" value="Tetap sama"> Tetap sama</label><br>
-        <label><input type="radio" name="q9" value="Tidak dapat diprediksi"> Tidak dapat diprediksi</label>
-      </div>
-      <div class="question">
-        <p>10. Urutkan unsur-unsur berikut berdasarkan afinitas elektron dari yang tertinggi ke terendah: 
-          <div> I (Iodin)
-          <div> Br (Bromin)
-          <div> Cl (Klorin)
-          <div> F (Fluorin)       </p>
-      </div>
-        <label><input type="radio" name="q10" value="F > Cl > Br > I"> F > Cl > Br > I</label><br>
-        <label><input type="radio" name="q10" value="Cl > F > Br > I"> Cl > F > Br > I</label><br>
-        <label><input type="radio" name="q10" value="I > Br > Cl > F"> I > Br > Cl > F</label><br>
-        <label><input type="radio" name="q10" value="Br > Cl > I > F"> Br > Cl > I > F</label>
+    
+    <div class="question">
+        <p>2. Struktur teks anekdot yang berfungsi untuk memperkenalkan latar atau tokoh adalah…</p>
+        <label><input type="radio" name="q2" value="Krisis"> Krisis</label><br> 
+        <label><input type="radio" name="q2" value="Orientasi"> Orientasi</label><br> 
+        <label><input type="radio" name="q2" value="Reaksi"> Reaksi</label><br> 
+        <label><input type="radio" name="q2" value="Koda"> Koda</label><br> 
+    </div>
+    
+    <div class="question">
+        <p>3. Salah satu kaidah kebahasaan dalam anekdot adalah penggunaan kata kerja aksi. Contoh kata kerja aksi adalah…</p>
+        <label><input type="radio" name="q3" value="Tertawa, lucu, menarik"> Tertawa, lucu, menarik</label><br> 
+        <label><input type="radio" name="q3" value="Berlari, melompat, menulis"> Berlari, melompat, menulis</label><br> 
+        <label><input type="radio" name="q3" value="Cerdas, pandai, lucu"> Cerdas, pandai, lucu</label><br> 
+        <label><input type="radio" name="q3" value="Jika, maka, tetapi"> Jika, maka, tetapi</label><br> 
+    </div>
+    
+    <div class="question">
+        <p>4. Perbedaan anekdot dengan humor biasa terletak pada…</p>
+        <label><input type="radio" name="q4" value="Adanya pesan moral atau kritik dalam anekdot"> Adanya pesan moral atau kritik dalam anekdot</label><br> 
+        <label><input type="radio" name="q4" value="Anekdot lebih lucu dibanding humor biasa"> Anekdot lebih lucu dibanding humor biasa</label><br> 
+        <label><input type="radio" name="q4" value="Anekdot selalu menceritakan tokoh terkenal"> Anekdot selalu menceritakan tokoh terkenal</label><br> 
+        <label><input type="radio" name="q4" value="Humor biasa memiliki struktur yang lebih formal"> Humor biasa memiliki struktur yang lebih formal</label><br> 
+    </div>
+    
+    <div class="question">
+        <p>5. "Penyebab kericuhan di kelas itu segera ditangani oleh guru." Pernyataan ini dapat dimasukkan ke dalam struktur teks anekdot pada bagian…</p>
+        <label><input type="radio" name="q5" value="Krisis"> Krisis</label><br> 
+        <label><input type="radio" name="q5" value="Reaksi"> Reaksi</label><br> 
+        <label><input type="radio" name="q5" value="Abstraksi"> Abstraksi</label><br> 
+        <label><input type="radio" name="q5" value="Koda"> Koda</label><br> 
+    </div>
+    
+    <div class="question">
+        <p>6. Ciri khas hikayat yang membedakannya dari jenis teks lainnya adalah…</p>
+        <label><input type="radio" name="q6" value="Mengandung unsur humor yang ringan"> Mengandung unsur humor yang ringan</label><br> 
+        <label><input type="radio" name="q6" value="Memuat kisah-kisah fiksi penuh keajaiban"> Memuat kisah-kisah fiksi penuh keajaiban</label><br> 
+        <label><input type="radio" name="q6" value="Menggunakan tokoh modern dengan konflik sehari-hari"> Menggunakan tokoh modern dengan konflik sehari-hari</label><br> 
+        <label><input type="radio" name="q6" value="Menggunakan bahasa daerah dalam penyampaiannya"> Menggunakan bahasa daerah dalam penyampaiannya</label><br> 
+    </div>
+    
+    <div class="question">
+        <p>7. Struktur teks hikayat yang mengandung pelajaran moral sering ditemukan pada bagian…</p>
+        <label><input type="radio" name="q7" value="Peristiwa utama"> Peristiwa utama</label><br> 
+        <label><input type="radio" name="q7" value="Penutup"> Penutup</label><br> 
+        <label><input type="radio" name="q7" value="Pembuka"> Pembuka</label><br> 
+        <label><input type="radio" name="q7" value="Klimaks"> Klimaks</label><br> 
+    </div>
+    
+    <div class="question">
+        <p>8. Kaidah kebahasaan hikayat sering menggunakan "bahasa klise". Contoh penggunaan bahasa klise adalah…</p>
+        <label><input type="radio" name="q8" value="Suatu hari ia pergi ke pasar membeli ikan"> Suatu hari ia pergi ke pasar membeli ikan</label><br> 
+        <label><input type="radio" name="q8" value="Alkisah, hiduplah seorang raja yang bijaksana"> Alkisah, hiduplah seorang raja yang bijaksana</label><br> 
+        <label><input type="radio" name="q8" value="Raja segera mengeluarkan perintah pada seluruh rakyatnya"> Raja segera mengeluarkan perintah pada seluruh rakyatnya</label><br> 
+        <label><input type="radio" name="q8" value="Ayah sedang pergi mencari kayu bakar"> Ayah sedang pergi mencari kayu bakar</label><br> 
+    </div>
+    
+    <div class="question">
+        <p>9. Salah satu perbedaan mendasar antara hikayat dan dongeng adalah…</p>
+        <label><input type="radio" name="q9" value="Hikayat menggunakan tokoh-tokoh nyata dari kerajaan tertentu"> Hikayat menggunakan tokoh-tokoh nyata dari kerajaan tertentu</label><br> 
+        <label><input type="radio" name="q9" value="Dongeng lebih mengutamakan nilai hiburan daripada nilai moral"> Dongeng lebih mengutamakan nilai hiburan daripada nilai moral</label><br> 
+        <label><input type="radio" name="q9" value="Hikayat selalu berakhir dengan kebahagiaan"> Hikayat selalu berakhir dengan kebahagiaan</label><br> 
+        <label><input type="radio" name="q9" value="Dongeng menggunakan bahasa yang penuh makna simbolis"> Dongeng menggunakan bahasa yang penuh makna simbolis</label><br> 
+    </div>
+    
+    <div class="question">
+        <p>10. Salah satu tujuan utama hikayat dalam masyarakat lama adalah…</p>
+        <label><input type="radio" name="q10" value="Memberikan hiburan ringan semata"> Memberikan hiburan ringan semata</label><br> 
+        <label><input type="radio" name="q10" value="Mengkritik kondisi sosial masyarakat"> Mengkritik kondisi sosial masyarakat</label><br> 
+        <label><input type="radio" name="q10" value="Menanamkan nilai moral dan keagamaan"> Menanamkan nilai moral dan keagamaan</label><br> 
+        <label><input type="radio" name="q10" value="Meningkatkan keterampilan berbahasa seseorang"> Meningkatkan keterampilan berbahasa seseorang</label><br> 
+    
       </div>
       <button type="button" id="submitBtn">Kirim Jawaban</button>
     </form>

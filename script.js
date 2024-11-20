@@ -1,15 +1,15 @@
 document.getElementById("submitBtn").addEventListener("click", function() {
   const answers = {
-    q1: "Menghibur dan mengandung kritik sosial",
-q2: "Orientasi",
-q3: "Berlari, melompat, menulis",
-q4: "Adanya pesan moral atau kritik dalam anekdot",
-q5: "Reaksi",
-q6: "Memuat kisah-kisah fiksi penuh keajaiban",
-q7: "Penutup",
-q8: "Alkisah, hiduplah seorang raja yang bijaksana",
-q9: "Dongeng lebih mengutamakan nilai hiburan daripada nilai moral",
-q10: "Menanamkan nilai moral dan keagamaan"
+q1: "Menghibur dan mengandung kritik sosial",
+q2: "Orientasi – Abstraksi – Krisis – Reaksi – Koda",
+q3: "Menggunakan kalimat langsung dan tidak langsung",
+q4: "Hikayat berisi kisah tokoh dengan kehebatan luar biasa, sedangkan anekdot lebih realistis",
+q5: "Mengandung unsur mitos dan keajaiban",
+q6: "Pembukaan – Isi – Penutup",
+q7: "Kalimat dengan ungkapan hiperbolis",
+q8: "Hikayat Hang Tuah",
+q9: "Menghibur dan menyampaikan kritik secara tidak langsung",
+q10: "Pada akhirnya, semua orang pun tertawa melihat kejadiannya."
   };
 
   let score = 0;

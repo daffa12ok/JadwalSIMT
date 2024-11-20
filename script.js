@@ -19,7 +19,7 @@ q16: "Membantu sesama peserta yang membutuhkan",
 q17: "Riba",
 q18: "Meningkatkan solidaritas dan kesejahteraan bersama",
 q19: "Kebutuhan umum sesuai prinsip syariah",
-q20: "Transaksi tidak melibatkan unsur spekulasi atau riba"
+q20: "Transaksi tidak melibatkan unsur spekulasi atau riba",
   };
 
   let score = 0;

@@ -1,15 +1,25 @@
 document.getElementById("submitBtn").addEventListener("click", function() {
   const answers = {
-q1: "Menghibur dan mengandung kritik sosial",
-q2: "Orientasi – Abstraksi – Krisis – Reaksi – Koda",
-q3: "Menggunakan kalimat langsung dan tidak langsung",
-q4: "Hikayat berisi kisah tokoh dengan kehebatan luar biasa, sedangkan anekdot lebih realistis",
-q5: "Mengandung unsur mitos dan keajaiban",
-q6: "Pembukaan – Isi – Penutup",
-q7: "Kalimat dengan ungkapan hiperbolis",
-q8: "Hikayat Hang Tuah",
-q9: "Menghibur dan menyampaikan kritik secara tidak langsung",
-q10: "Pada akhirnya, semua orang pun tertawa melihat kejadiannya."
+q1: "Hidup dengan mengutamakan konsumsi berlebihan untuk kesenangan diri",
+q2: "Mengurangi kualitas hubungan sosial",
+q3: "Melakukan ibadah untuk mendapatkan pujian",
+q4: "Menganggap diri lebih tinggi daripada orang lain",
+q5: "Dapat merusak hubungan antar sesama",
+q6: "Menjaga keseimbangan antara kebutuhan duniawi dan spiritual",
+q7: "Rasa syukur dan keikhlasan dalam beramal",
+q8: "Karena merasa diri lebih tahu dan lebih baik",
+q9: "Menumbuhkan sikap iri terhadap keberhasilan orang lain",
+q10: "Hidup sederhana dan mengutamakan kebutuhan orang lain",
+q11: "Menghindari unsur riba dan gharar",
+q12: "Bertransaksi berdasarkan prinsip keadilan dan berbagi risiko",
+q13: "Meningkatkan kesejahteraan bersama dengan berbagi hasil",
+q14: "Keuntungan yang adil dan berbagi risiko",
+q15: "Koperasi syariah mengutamakan prinsip keadilan dan larangan riba",
+q16: "Membantu sesama peserta yang membutuhkan",
+q17: "Riba",
+q18: "Meningkatkan solidaritas dan kesejahteraan bersama",
+q19: "Kebutuhan umum sesuai prinsip syariah",
+q20: "Transaksi tidak melibatkan unsur spekulasi atau riba"
   };
 
   let score = 0;

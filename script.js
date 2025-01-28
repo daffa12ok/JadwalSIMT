@@ -1,5 +1,5 @@
 const scheduleData = [
-    { class: "Ujian Tesis - I Nyoman Indra Darmawan", date: "2025-01-30", time: "18:30 - 19:30", description: ""Kelas -" },
+    { class: "Ujian Tesis - I Nyoman Indra Darmawan", date: "2025-01-30", time: "18:30 - 19:30", description: "Kelas -" },
     { class: "Ujian Tesis - Muhammad Arif Abidin", date: "2025-01-30", time: "18:30 - 19:30", description: "Kelas -" },
     ];
 

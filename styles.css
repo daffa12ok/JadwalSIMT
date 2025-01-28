@@ -1,150 +1,78 @@
-/* Reset margin and padding */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f2f4f8; /* Warna latar belakang calm */
-  line-height: 1.6;
-  height: 100vh;
-  overflow-y: auto; /* Aktifkan scroll vertikal */
-  padding: 20px 0; /* Tambahkan padding agar soal tidak terlalu menempel */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #333;
 }
 
-
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: linear-gradient(90deg, #4a89a1, #6a9ebd);
-  color: white;
-  display: flex;
-  justify-content: space-between; /* Tambahkan spasi di antara elemen */
-  align-items: center;
-  padding: 10px 20px;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border-bottom: 2px solid #f2f4f8; /* Border bawah untuk pemisah */
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-.navbar h1 {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0;
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
-
-#timer {
-  font-weight: bold;
-  font-size: 16px;
+.controls {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-#submitBtn {
-  background: #ff6f61; /* Warna merah pastel */
-  border: none;
-  color: white;
-  padding: 8px 15px;
-  font-size: 14px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-#submitBtn:hover {
-  background: #ff5c4d;
-}
-
-/* Main Container */
-.quiz-container {
-  margin: 80px auto; /* Margin otomatis untuk memusatkan secara horizontal */
-  padding: 20px 30px;
-  width: 90%; /* Lebar relatif untuk tampilan responsif */
-  max-width: 700px; /* Lebar maksimal */
-  background: #ffffff; /* Warna latar belakang putih */
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
-  user-select: none; /* Mencegah teks dipilih */
-}
-
-.question {
-  margin-bottom: 20px;
-  padding: 20px;
-  background: linear-gradient(90deg, #f7fafc, #e9eff4); /* Gradasi lembut */
-  border-radius: 8px;
-  border: 2px solid #dbe2ea; /* Perbesar border */
-  text-align: left;
-  user-select: none; /* Mencegah teks dipilih */
-}
-
-.question h2 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  color: #333;
-  text-transform: capitalize; /* Huruf kapital setiap kata */
-}
-
-label:hover {
-  background: #eef5fb; /* Tambahkan efek hover di label */
-  border-radius: 5px;
-}
-/* Result Section */
-#result {
-  margin: 20px auto;
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  color: #4a89a1; /* Warna calm untuk hasil */
-}
-
-/* Progress Animation */
-.progress-bar {
-  animation: grow 0.6s ease-in-out;
-}
-
-@keyframes grow {
-  from {
-    width: 0;
-  }
-  to {
+#filterInput, #dateFilter {
+    padding: 10px;
     width: 100%;
-  }
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
 }
 
-/* Desain elegan untuk input nama */
-.input-container {
-  margin-bottom: 20px;
+#filterInput:focus, #dateFilter:focus {
+    border-color: #0056b3;
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.3);
 }
 
-.input-container label {
-  font-size: 16px;
-  font-weight: bold;
-  color: #4a89a1; /* Warna calm untuk label */
-  margin-bottom: 10px;
-  display: block;
+.schedule-list {
+    list-style: none;
+    padding: 0;
 }
 
-.input-container input {
-  width: 100%;
-  padding: 10px 15px;
-  font-size: 16px;
-  border: 2px solid #dbe2ea; /* Border lembut */
-  border-radius: 8px; /* Sudut melengkung */
-  outline: none;
-  background: #f7fafc; /* Latar belakang soft */
-  transition: border 0.3s, box-shadow 0.3s; /* Animasi saat fokus */
+.schedule-list li {
+    background: #e9f5ff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
-.input-container input:focus {
-  border-color: #4a89a1; /* Warna border saat fokus */
-  box-shadow: 0 0 8px rgba(74, 137, 161, 0.5); /* Efek glow */
+.schedule-list li h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #0056b3;
+    font-weight: 600;
 }
 
-/* Tambahkan margin pada label dan input */
-.input-container input::placeholder {
-  color: #b0b8c1; /* Warna placeholder yang elegan */
-  font-style: italic; /* Italic untuk placeholder */
+.schedule-list li p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
 }

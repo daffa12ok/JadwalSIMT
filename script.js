@@ -1,40 +1,36 @@
-document.getElementById("submitBtn").addEventListener("click", function() {
-  const answers = {
-q1: "Studi tentang ilmu yang berkaitan dengan pengolahan dan pemanfaatan informasi",  
-q2: "Hardware, software, users",  
-q3: "Mengotomatisasi proses pengambilan keputusan berdasarkan data",  
-q4: "Perangkat lunak tidak akan berfungsi tanpa perangkat keras",  
-q5: "Penulisan instruksi yang memungkinkan komputer melakukan tugas",  
-q6: "Agar peserta didik dapat memahami cara berpikir algoritmik",  
-q7: "Kemampuan untuk menyampaikan informasi secara efektif melalui media elektronik",  
-q8: "Mengidentifikasi tujuan komunikasi dalam jaringan",  
-q9: "Menyelesaikan masalah menggunakan intuisi manusia",  
-q10: "Menyederhanakan masalah menjadi lebih mudah dipahami",  
-q11: "Menemukan nilai terbesar dalam sekumpulan data",  
-q12: "Diurutkan terlebih dahulu",  
-q13: "Bubble Sort",  
-q14: "Memilih elemen terkecil dan menukarnya dengan elemen pertama",  
-q15: "Menggunakan pendekatan divide and conquer secara langsung",  
-q16: "Proses input data dalam sistem komputer",  
-q17: "Tumpukan mengikuti prinsip LIFO (Last In, First Out), sementara antrian mengikuti prinsip FIFO (First In, First Out)",  
-q18: "Memungkinkan integrasi data antar aplikasi",  
-q19: "Menyimpan dan mengakses data dari berbagai perangkat melalui internet",  
-q20: "Memasukkan data dari aplikasi spreadsheet ke dalam dokumen pengolah kata secara langsung",
-  };
+const scheduleData = [
+    { class: "Ujian Tesis - Afdal", date: "2025-01-30", time: "16:00 - 17:00", description: "Kelas 207 (Hybrid)" },
+    { class: "Ujian Proposal Tesis - Nia", date: "2025-01-30", time: "10:30 - 12:30", description: "Introduction to mechanics and thermodynamics." },
+    ];
 
-  let score = 0;
-  const form = document.getElementById("quizForm");
-  const resultDiv = document.getElementById("result");
+function renderSchedule(data) {
+    const scheduleList = document.getElementById('scheduleList');
+    scheduleList.innerHTML = '';
+    data.forEach(item => {
+        const listItem = document.createElement('li');
+        listItem.innerHTML = `
+            <h2>${item.class}</h2>
+            <p><strong>Date:</strong> ${item.date}</p>
+            <p><strong>Time:</strong> ${item.time}</p>
+            <p><strong>Description:</strong> ${item.description}</p>
+        `;
+        scheduleList.appendChild(listItem);
+    });
+}
 
-  // Periksa setiap jawaban
-  for (const question in answers) {
-    const userAnswer = form.elements[question].value;
-    if (userAnswer === answers[question]) {
-      score++;
-    }
-  }
+function filterSchedule() {
+    const filterValue = document.getElementById('filterInput').value.toLowerCase();
+    const dateValue = document.getElementById('dateFilter').value;
+    const filteredData = scheduleData.filter(item => {
+        const matchesClass = item.class.toLowerCase().includes(filterValue);
+        const matchesDate = !dateValue || item.date === dateValue;
+        return matchesClass && matchesDate;
+    });
+    renderSchedule(filteredData);
+}
 
-  // Tampilkan hasil
-  const totalQuestions = Object.keys(answers).length;
-  resultDiv.innerHTML = `Kamu menjawab benar ${score} dari ${totalQuestions} soal.`;
-});
+document.getElementById('filterInput').addEventListener('input', filterSchedule);
+document.getElementById('dateFilter').addEventListener('input', filterSchedule);
+
+// Initial render
+document.addEventListener('DOMContentLoaded', () => renderSchedule(scheduleData));

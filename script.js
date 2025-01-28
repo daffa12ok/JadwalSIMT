@@ -1,6 +1,6 @@
 const scheduleData = [
-    { class: "Ujian Tesis - Afdal", date: "2025-01-30", time: "16:00 - 17:00", description: "Kelas 207 (Hybrid)" },
-    { class: "Ujian Proposal Tesis - Nia", date: "2025-01-30", time: "10:30 - 12:30", description: "Introduction to mechanics and thermodynamics." },
+    { class: "Ujian Tesis - I Nyoman Indra Darmawan", date: "2025-01-30", time: "18:30 - 19:30", description: ""Kelas -" },
+    { class: "Ujian Tesis - Muhammad Arif Abidin", date: "2025-01-30", time: "18:30 - 19:30", description: "Kelas -" },
     ];
 
 function renderSchedule(data) {
